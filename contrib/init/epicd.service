@@ -1,0 +1,26 @@
+[Unit]
+Description=WORKBIT's distributed currency daemon
+After=network.target
+
+[Service]
+User=WORKBIT
+Group=WORKBIT
+
+Type=forking
+PIDFile=/var/lib/WORKBITd/WORKBITd.pid
+
+ExecStart=/usr/bin/WORKBITd -daemon -pid=/var/lib/WORKBITd/WORKBITd.pid \
+          -conf=/etc/WORKBIT/WORKBIT.conf -datadir=/var/lib/WORKBITd
+
+ExecStop=-/usr/bin/WORKBIT-cli -conf=/etc/WORKBIT/WORKBIT.conf \
+         -datadir=/var/lib/WORKBITd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

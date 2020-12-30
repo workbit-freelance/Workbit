@@ -1,0 +1,29 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/WORKBIT_bg.qm</file>
+        <file alias="ca">locale/WORKBIT_ca.qm</file>
+        <file alias="cs">locale/WORKBIT_cs.qm</file>
+        <file alias="da">locale/WORKBIT_da.qm</file>
+        <file alias="de">locale/WORKBIT_de.qm</file>
+        <file alias="en">locale/WORKBIT_en.qm</file>
+        <file alias="en_US">locale/WORKBIT_en_US.qm</file>
+        <file alias="es">locale/WORKBIT_es.qm</file>
+        <file alias="fi">locale/WORKBIT_fi.qm</file>
+        <file alias="fr_FR">locale/WORKBIT_fr_FR.qm</file>
+        <file alias="it">locale/WORKBIT_it.qm</file>
+        <file alias="ja">locale/WORKBIT_ja.qm</file>
+        <file alias="ko_KR">locale/WORKBIT_ko_KR.qm</file>
+        <file alias="nl">locale/WORKBIT_nl.qm</file>
+        <file alias="pl">locale/WORKBIT_pl.qm</file>
+        <file alias="pt">locale/WORKBIT_pt.qm</file>
+        <file alias="pt_BR">locale/WORKBIT_pt_BR.qm</file>
+        <file alias="ro_RO">locale/WORKBIT_ro_RO.qm</file>
+        <file alias="ru">locale/WORKBIT_ru.qm</file>
+        <file alias="sk">locale/WORKBIT_sk.qm</file>
+        <file alias="sv">locale/WORKBIT_sv.qm</file>
+        <file alias="tr">locale/WORKBIT_tr.qm</file>
+        <file alias="uk">locale/WORKBIT_uk.qm</file>
+        <file alias="zh_CN">locale/WORKBIT_zh_CN.qm</file>
+        <file alias="zh_TW">locale/WORKBIT_zh_TW.qm</file>
+    </qresource>
+</RCC>
